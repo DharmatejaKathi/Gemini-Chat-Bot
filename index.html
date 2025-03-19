@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini</title>
+    <!-- Linking font icons  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- App Header -->
+      <header class="app-header">
+        <h1 class="main-heading">Hello, there</h1>
+        <h2 class="sub-heading">How can i help you today?</h2>
+      </header>
+
+      <!-- Suggestion cards -->
+      <ul class="suggestion">
+        <li class="suggestion-list-item">
+          <p class="text">
+            Design a home office setup for remote work under $500
+          </p>
+          <span class="material-symbols-outlined"> draw </span>
+        </li>
+        <li class="suggestion-list-item">
+          <p class="text">
+            How can i level up my web development expertise in 2025?
+          </p>
+          <span class="material-symbols-outlined"> lightbulb </span>
+        </li>
+        <li class="suggestion-list-item">
+          <p class="text">
+            Suggest some useful tools for dubugging JavaScript code.
+          </p>
+          <span class="material-symbols-outlined"> explore </span>
+        </li>
+        <li class="suggestion-list-item">
+          <p class="text">
+            Create a React JS component for the simple todo list app.
+          </p>
+          <span class="material-symbols-outlined"> code </span>
+        </li>
+      </ul>
+
+      <!-- Chats Container -->
+
+      <div class="chats-container"></div>
+
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input
+              type="text"
+              placeholder="Ask Gemini"
+              class="prompt-input"
+              required
+            />
+            <div class="prompt-action">
+              <button id="send-prompt-btn" class="material-symbols-outlined">
+                arrow_upward
+              </button>
+            </div>
+          </form>
+        </div>
+        <p class="disclaimer">Google Gimini can make mistakes check it once!</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
